@@ -1,0 +1,375 @@
+@charset "utf-8";
+body {
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size:12px;
+    background: #CCC;
+    margin: 0;
+    padding: 0;
+    color: #636760;
+
+}
+
+
+.container {
+    width: 960px;
+    background: #FFFFFF;
+    margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+    height:auto;
+}
+
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+header
+{
+    width:100%;
+    margin:0;
+    padding:0;
+    height:auto;
+    background-color:#FFF;
+}
+.header-top {
+    height:100px;
+
+}
+.header-bottom {
+    height:370px;
+    width:960px;
+    margin:auto;
+    background-color:#F4F4F4;
+	z-index:-1;	
+}
+#showplus_images_slides {
+	z-index:-1!important;
+
+}
+
+.header-bottom-left {
+    height:370px;
+    width:170px;
+    float:left;
+    /*background-image:url(../images/mobilemoney.jpg);
+	background-repeat:no-repeat;
+	filter:alpha(opacity=40);
+	opacity:0.2; */
+}
+
+.header-bottom-right {
+    float:right;
+    width:790px;
+    height:370px;
+	text-align:left;
+}
+/* ~~ This is the layout information. ~~
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+
+.sitelogo {
+    width:180px;
+    height:90px;
+    float:left;
+    background-color: #38383B;
+}
+
+.logoimg {
+		height:142px;
+		width:180px;
+		z-index:10!important;		
+		float:left;
+		text-align:left;
+		padding:0;
+		margin:0;
+		position:absolute;
+		
+}
+.menu{
+    width: 780px;
+    background-color: #38383B;
+    float:right;
+    height:90px;
+	
+}
+
+.menu ul{
+    margin: 0; padding: 0;
+    float: left;
+   	margin:auto;
+	width:780px;
+	list-style:none;
+	padding-left:10px;
+}
+
+.menu ul li{
+    display: inline;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	width:auto;
+
+}
+
+.menu ul li a{
+    float: left;
+	text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+    padding-top:45px;
+    padding-right:25px;
+    padding-left:25px;
+	font-size:14px;
+	display:block;
+}
+
+.menu ul li a:visited{
+    color: white;
+}
+
+.menu ul li a:hover, .menu ul li.current a , .menu ul li.active a{
+    color: #fff;
+    background-color:#693;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+    padding-right: 15px;
+    padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+    text-align:left;
+}
+
+
+.maincontent {
+    width: 960px;
+    margin: 0 auto;
+    margin-top:10px;
+    height:auto;
+    margin-bottom:50px;
+    padding:0;
+
+}
+.sidebar1 {
+    background:#636760;
+    width:160px;
+    height:auto;
+    border-radius:25px;
+    margin-left:15px;
+    margin-right:15px;
+    color:#FFF;
+    font-family:Tahoma, Geneva, sans-serif;
+    float: left;
+    padding-bottom: 10px;
+    border:2px solid #a1a1a1;
+    padding:10px 20px;
+}
+
+.content {
+
+    padding-right:10px;
+    padding-right:15px;
+    width: 380px;
+    float: left;
+    text-align:left;
+    padding-right:25px;
+    color:#636760;
+    line-height:1.5;
+}
+.sidebar2 {
+    float: left;
+    width: 280px;
+    padding: 10px 0;
+}
+
+.sidebar2_content {
+    width:278px;
+    height:auto;
+    padding-left:10px;
+    padding-right:15px;
+    padding-bottom:10px;
+    text-align:left;
+    margin-bottom:15px;
+}
+/* ~~ The footer ~~ */
+
+.footer {
+    background: #38383B;   
+	width:960px;
+	margin:0px;
+	float:left;
+	height:auto;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+
+.footer ul
+{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+	
+}
+.footer li
+{
+    background-image:url(../images/sqgreen.gif);
+    background-repeat:no-repeat;
+    background-position:0px 5px;
+    padding-left:14px;
+	font-size:12px;
+	color:#FFF;
+	margin-left:60px;
+	line-height:1.5;
+}
+
+.footer ul li a
+{
+	color:#FFF;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-decoration:none;
+}
+
+.footer ul li a:visited{
+    color: #FF9900;
+}
+
+.footer ul li a:hover, .menu ul li .current{
+    color: #8BE828;
+
+}
+
+.copyright {
+    background: #1F1F1F;
+    position:relative;
+    height:30px;
+    padding-top:10px;
+    clear:both;
+	width:960px;
+	text-align:center;
+    font-weight:bold;
+    color:#FFF;
+
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+          float: right;
+          margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+          float: left;
+          margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+              clear:both;
+              height:0;
+              font-size: 1px;
+              line-height: 0px;
+}
+
+
+a {
+    color:#FFF;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+        border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+    color: #42413C;
+    text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+    color: #6E6C64;
+    text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+                             text-decoration: none;
+}
+
+
+
+#showplus_images_slides .showplus-thumbnails { 
+	visibility:hidden;
+	display:none;	
+}
+
+.contactus {
+	color:#8BE828;
+	font-family:Arial, Helvetica, sans-serif, Times, serif;
+	font-weight:bold;	
+	
+}
+.foxcontainer {
+	margin-left:50px;	
+}
+.foxform a:link {
+	color:#FFF!important;	
+}
+
+.articleheader {
+	text-align:center!important;
+	margin-left:15px!important;
+	border-radius:25px!important;
+	background-color:#636760!important;
+	width:170px!important;
+	height:auto!important;
+	padding-top:10px!important;
+	padding-bottom:10px!important;	
+}
+
+
+/* CSS for the Product Page */
+
+.productleft {
+	background-image:url(../images/Productsbg.gif);
+	background-repeat:no-repeat;
+	height:243px;
+	width:300px;	
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	padding-left:px;
+	padding-right:5px;
+
+}
+.productright {
+	background-image:url(../images/Productsbg.gif);
+	background-repeat:no-repeat;
+	height:243px;
+	width:300px;	
+	float:right;
+	padding-left:5px;
+	padding-right:5px;
+	margin-bottom:10px;
+}
+.clientleft {
+	background-image:url(../images/Clientsbg.gif);
+	background-repeat:no-repeat;
+	height:144px;
+	width:195px;	
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	padding-left:px;
+	padding-right:5px;
+	margin-top:50px;	
+}
+
+.clientright {
+	background-image:url(../images/Clientsbg.gif);
+	background-repeat:no-repeat;
+	height:144px;
+	width:199px;	
+	float:right;
+	padding-left:5px;
+	padding-right:5px;
+	margin-bottom:10px;
+}
+#system-readmore {
+	color:#000;
+	
+}
+.careers {
+	margin-left:15px;	
+}
+.careerlink {
+	color:#8AE818!important;	
+	text-decoration:underline;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.7" type="template" client="site">
+	<name>MobiXip</name>
+	<creationDate>25 November 2011</creationDate>
+	<author>Zohaib Zahid</author>
+	<authorEmail>zohaib.mir@gmail.com</authorEmail>
+	<authorUrl>http://www.mobixip.com</authorUrl>
+	<copyright>Copyright (C) 2011 MobiXip, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<version>1.7.0</version>
+	<description>TPL_MobiXip_XML_DESCRIPTION</description>
+	<files>
+		<folder>images</folder>
+		<folder>css</folder>
+		<filename>index.php</filename>
+		<filename>component.php</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.ext</filename>		
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+		<position>headerslide</position>
+		<position>footermenu1</position>
+		<position>footermenu2</position>
+		<position>footermenu3</position>
+		<position>copyright</position>
+		<position>articleheader</position>
+	</positions>
+</extension>
